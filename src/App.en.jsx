@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import Dashboard from './pages/Dashboard';
-import Management from './pages/Management';
-import NFTMarket from './pages/NFTMarket';
-import UserManagement from './pages/Management/User';
-import DeviceManagement from './pages/Management/Device';
-import AdvertiserManagement from './pages/Management/Advertiser';
-import DeveloperManagement from './pages/Management/Developer';
-import ReviewerManagement from './pages/Management/Reviewer';
+import Layout from './components/Layout/index.en';
+import Home from './pages/Home/index.en';
+import Dashboard from './pages/Dashboard/index.en';
+import Management from './pages/Management/index.en';
+import NFTMarket from './pages/NFTMarket/index.en';
+import UserManagement from './pages/Management/User/index.en';
+import DeviceManagement from './pages/Management/Device/index.en';
+import AdvertiserManagement from './pages/Management/Advertiser/index.en';
+import DeveloperManagement from './pages/Management/Developer/index.en';
+import ReviewerManagement from './pages/Management/Reviewer/index.en';
 
 function App() {
   return (
