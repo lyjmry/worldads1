@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { BellIcon, UserIcon } from '@heroicons/react/24/outline';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 export default function Navbar() {
+  const { toggleLanguage } = useLanguage();
+
   return (
     <nav className="h-16 border-b border-purple-500/10 bg-gray-900/50 backdrop-blur-xl fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 h-full flex items-center justify-between">
@@ -33,12 +36,12 @@ export default function Navbar() {
         {/* Right Section */}
         <div className="flex items-center space-x-4">
           {/* Language Switch */}
-          <a 
-            href="/" 
+          <button 
+            onClick={toggleLanguage}
             className="px-3 py-1.5 rounded-lg border border-purple-500/20 text-purple-400 hover:bg-purple-500/10 transition-colors"
           >
             中文
-          </a>
+          </button>
 
           {/* Notifications */}
           <motion.button
