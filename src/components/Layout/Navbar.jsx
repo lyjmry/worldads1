@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-4">
           {/* Language Switch */}
           <a 
-            href="./en.html" 
+            href="/en" 
             className="px-3 py-1.5 rounded-lg border border-purple-500/20 text-purple-400 hover:bg-purple-500/10 transition-colors"
           >
             English
