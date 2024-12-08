@@ -6,20 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3001,
-    open: true,
-    proxy: {
-      '/en': {
-        target: 'http://localhost:3001',
-        rewrite: () => '/en.html'
-      }
-    }
-  },
-  build: {
-    rollupOptions: {
-      input: {
-        main: './index.html',
-        en: './en.html'
-      }
-    }
+    open: true
   }
 })
