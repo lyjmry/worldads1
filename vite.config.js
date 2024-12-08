@@ -6,7 +6,12 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3001,
-    open: '/en.html' // 默认打开英文版
+    open: true,
+    historyApiFallback: {
+      rewrites: [
+        { from: /^\/en\/.*/, to: '/en.html' }
+      ]
+    }
   },
   build: {
     rollupOptions: {
